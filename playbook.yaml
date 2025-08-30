@@ -1,9 +1,9 @@
 - hosts: webservers
   become: yes
   tasks:
-    # - name: update ubuntu
-    #   apt:
-    #   update_cache: yes
+    - name: update ubuntu
+      apt:
+        update_cache: yes
     - name: Install Nginx
       apt:
         name: nginx
