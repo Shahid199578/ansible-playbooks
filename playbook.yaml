@@ -8,7 +8,7 @@
         name: nginx
         state: present
 
-    - name: Copy index.html
+    - name: Copy index.html into nginx Dir
       copy:
         src: index.html
         dest: /var/www/html/index.html
